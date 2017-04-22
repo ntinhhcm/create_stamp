@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
 			$window_print.document.write('<html><head><title>' + $template_name + '</title>');
 			$window_print.document.write('<link rel="stylesheet" type="text/css" href="template/css/' + $template_name + '.css"><style>');
 			$window_print.document.write('div.box_render{width: 300px;height: 100px;border-color: rgb(0,0,0);border-style: solid;border-width: thin;margin: 5px 5px;float: left;}div.box_render .box_render_inside{width: 275px;height: 75px;border-color: rgb(0,0,0);border-style: solid;border-width: thin;margin: 0 auto;top: 10.5px;position: relative;}div.box_render .box_render_inside div {text-align: center;padding: 5px;}div.box_render .box_render_inside .main_name{font-weight: bold;text-align: center;font-size:15pt;}div.box_render .box_render_inside .position_name{font-size:14pt;}</style></head>');
-			$window_print.document.write('<body>'+ $content + '</body></html>');
+			$window_print.document.write('<body onload="window.print();">'+ $content + '</body></html>');
 			$window_print.print();
 			$window_print.document.close();
 		});
