@@ -1,0 +1,89 @@
+/*
+ * Main css
+ *
+*/
+
+body{
+		font-family: "Arial";
+		font-size: 14pt;
+	}
+	#logo {
+		font-size: 50px;
+		font-style: italic;
+		font-weight: bold;
+		text-shadow: -2px -3px 6px;
+		color: rgba(0,0,0,0.3);
+	}
+	form div.field_in{
+		padding: 5px;
+	}
+	form div.field_in div{
+		position: relative;
+		display: inline-block;
+	}
+	form div.field_in div:nth-child(1){
+		width: 50px;
+	}
+	form div.field_in div:nth-child(2){
+		margin-left: 100px;
+	}
+	form div.field_in input {
+		width: 150px;
+		height: 30px;
+		padding: 2px;
+	}
+	form div.field_in input[type="file"] {
+		width: 300px;
+		height: 30px;
+	}
+	form div.field_in div.box_template {
+		width: 150px;
+		height: 25px;
+		border: thin solid rgb(0,0,0);
+		position: absolute;
+	}
+	form div.field_in div.pull_list {
+		width: 15px;
+	    height: 15px;
+	    margin-left: 251px;
+	    border: thin solid black;
+	    position: absolute;
+	    padding: 8px 5px 2px;
+	    border-radius: 0px 5px 5px 0px;
+	}
+	form div.field_in div.pull_list .arrow_down {
+		width: 0px;
+	    height: 0px;
+	    border-left: 8px solid transparent;
+	    border-right: 8px solid transparent;
+	    border-top: 8px solid black;
+	}
+	form div.field_in div.pull_list:hover {
+		border-color: blue;
+		box-shadow: 0px 1px 7px blue;
+	}
+	form div.field_in div.pull_list:hover .arrow_down {
+		border-top: 10px solid blue;
+	}
+	form div.field_in select#box_template {
+		width: 200px;
+		height: 40px;
+	}
+	a.a_button {
+		text-decoration: none;
+		border: thin solid black;
+		padding: 5px 15px;
+		color: black;
+		background-color: rgb(2,2,2), rgb(1,1,1);
+	}
+	div.filter {
+		display: inline-block;
+		position: relative;
+		width: 130px;
+		padding: 10px 8px 11px 0px;
+		background-color: rgb(35, 162, 223);
+		color: white;
+	}
+	div.filter:hover{
+		background-color: rgba(35, 162, 223, 0.5);
+	}

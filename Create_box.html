@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Create stamp</title>
+<script src="libs/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="libs/underscore-min.js" type="text/javascript"></script>
+<script src="template/config.js" type="text/javascript"></script>
+<script src="js/solve.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script></script>
+</head>
+<body>
+<div id="logo">Create stamp</div>
+<form>
+	<fieldset>
+		<legend>Configuration</legend>
+		<div class="field_in"><div>File:</div><div><input type="file" name="box_file"/></div></div>
+		<div class="field_in"><div>Template:</div>
+			<div><select id="box_template" name="box_template">
+					<option value="">Select template</option>
+				</select>
+			</div>
+		</div>
+		<div id="view_temp"></div>
+	</fieldset>
+</form>
+<form id="option_box">
+	<fieldset>
+		<legend>Filter data</legend>
+		<div class="field_in"><input id="filter_data" type="button" value="Filter"><input type="button" name="print" value="Print" class="box_print" ></div>
+	</fieldset>
+	<fieldset>
+		<legend>Preview</legend>
+		<div id="export-content">
+	</fieldset>
+</form>
+</div>
+<script type="text/template" id="filter_item">
+	<div class="filter">
+		<input type="checkbox" value="<%= a_order %>" id="item_<%= a_order %>"/>
+		<label for="item_<%= a_order %>">&nbsp<%= a_fill_name %></label>
+	</div>
+</script>
+</body>
+</html>
