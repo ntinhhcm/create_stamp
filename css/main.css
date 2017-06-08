@@ -22,7 +22,7 @@ body{
 		display: inline-block;
 	}
 	form div.field_in div:nth-child(1){
-		width: 50px;
+		width: 100px;
 	}
 	form div.field_in div:nth-child(2){
 		margin-left: 100px;

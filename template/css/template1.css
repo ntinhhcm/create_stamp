@@ -2,111 +2,39 @@
  * Design for box
  *
 */
+div.box_render{
+	width: 6cm;
+	height: 3cm;
+	border-color: rgb(0,0,0);
+	border-style: solid;
+	border-width: thin;
+	margin: 5px 5px;
+	float: left;
 
-	body{
-		font-family: "Times New Roman";
-		font-size: 14pt;
-	}
-	#logo {
-		font-size: 50px;
-		font-style: italic;
-		font-weight: bold;
-		text-shadow: -2px -3px 6px;
-		color: rgba(0,0,0,0.3);
-	}
-	form div.field_in{
-		padding: 5px;
-	}
-	form div.field_in div{
-		position: relative;
-		display: inline-block;
-	}
-	form div.field_in div:nth-child(1){
-		width: 50px;
-	}
-	form div.field_in div:nth-child(2){
-		margin-left: 100px;
-	}
-	form div.field_in input {
-		width: 150px;
-		height: 30px;
-		padding: 2px;
-	}
-	form div.field_in input[type="file"] {
-		width: 300px;
-		height: 30px;
-	}
-	form div.field_in div.box_template {
-		width: 150px;
-		height: 25px;
-		border: thin solid rgb(0,0,0);
-		position: absolute;
-	}
-	form div.field_in div.pull_list {
-		width: 15px;
-	    height: 15px;
-	    margin-left: 251px;
-	    border: thin solid black;
-	    position: absolute;
-	    padding: 8px 5px 2px;
-	    border-radius: 0px 5px 5px 0px;
-	}
-	form div.field_in div.pull_list .arrow_down {
-		width: 0px;
-	    height: 0px;
-	    border-left: 8px solid transparent;
-	    border-right: 8px solid transparent;
-	    border-top: 8px solid black;
-	}
-	form div.field_in div.pull_list:hover {
-		border-color: blue;
-		box-shadow: 0px 1px 7px blue;
-	}
-	form div.field_in div.pull_list:hover .arrow_down {
-		border-top: 10px solid blue;
-	}
-	form div.field_in div.pull_list div.box_template {
-		width: 150px;
-		border: thin solid black;
-		height: 150px;
-		position: absolute;;
-	}
-	a.a_button {
-		text-decoration: none;
-		border: thin solid black;
-		padding: 5px 15px;
-		color: black;
-		background-color: rgb(2,2,2), rgb(1,1,1);
-	}
-	div.box_render{
-		width: 300px;
-		height: 100px;
-		border-color: rgb(0,0,0);
-		border-style: solid;
-		border-width: thin;
-		margin: 5px 5px;
-		float: left;
-
-	}
-	div.box_render .box_render_inside{
-		width: 275px;
-		height: 75px;
-		border-color: rgb(0,0,0);
-		border-style: solid;
-		border-width: thin;
-		margin: 0 auto;
-		top: 10.5px;
-		position: relative;
-	}
-	div.box_render .box_render_inside div {
-		text-align: center;
-		padding: 5px;
-	}
-	div.box_render .box_render_inside .main_name{
-		font-weight: bold;
-		text-align: center;
-		font-size:15pt;
-	}
-	div.box_render .box_render_inside .position_name{
-		font-size:14pt;	
-	}
+}
+div.box_render .box_render_inside{
+	width: 5.4cm;
+	height: 2.4cm;
+	border-color: rgb(0,0,0);
+	border-style: solid;
+	border-width: thin;
+	margin: 0 auto;
+	top: 0.26cm;
+	position: relative;
+}
+div.box_render .box_render_inside div {
+	text-align: center;
+	font-family: "VNI-Helve-Condense";
+	transform: scale(1.4, 2.8);
+	position: relative;
+}
+div.box_render .box_render_inside .main_name{
+	font-weight: bold;
+	font-size: 10pt;
+	padding-top: 10px;
+}
+div.box_render .box_render_inside .position_name{
+	font-size: 6pt;
+	font-weight: bold;
+	padding-top: 15px;
+}
